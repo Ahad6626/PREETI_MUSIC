@@ -39,14 +39,14 @@ API_ID = int(os.getenv("API_ID"))
 API_HASH = os.getenv("API_HASH")
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 OWNER_ID = int(os.getenv("OWNER_ID", None))
-OWNER_USERNAME = os.getenv("OWNER_USERNAME", "WTF_WhyMeeh")
-BOT_USERNAME = os.getenv("BOT_USERNAME", "ShrutixMusicBot")
+OWNER_USERNAME = os.getenv("OWNER_USERNAME", "QIPLVX")
+BOT_USERNAME = os.getenv("BOT_USERNAME", "vicasobot")
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # 🛠️ Database & Deployment Configs
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-MONGO_DB_URI = os.getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = os.getenv("MONGO_DB_URI", " mongodb+srv://ahaan:ahaad@ahaan.hgkeruq.mongodb.net/?retryWrites=true&w=majority&appName=ahaan")
 LOG_GROUP_ID = int(os.getenv("LOG_GROUP_ID", None))
 HEROKU_APP_NAME = os.getenv("HEROKU_APP_NAME")
 HEROKU_API_KEY = os.getenv("HEROKU_API_KEY")
@@ -55,7 +55,7 @@ HEROKU_API_KEY = os.getenv("HEROKU_API_KEY")
 # 🔄 Git & Update Settings
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-UPSTREAM_REPO = os.getenv("UPSTREAM_REPO", "https://github.com/NoxxOP/ShrutiMusic")
+UPSTREAM_REPO = os.getenv("UPSTREAM_REPO", "https://github.com/Ahad6626/PREETI_MUSIC")
 UPSTREAM_BRANCH = os.getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = os.getenv("GIT_TOKEN", None)
 
@@ -63,12 +63,8 @@ GIT_TOKEN = os.getenv("GIT_TOKEN", None)
 # 🔗 Support Links
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-SUPPORT_CHANNEL = os.getenv("SUPPORT_CHANNEL", "https://t.me/ShrutiBots")
-SUPPORT_GROUP = os.getenv("SUPPORT_GROUP", "https://t.me/ShrutiBotSupport")
-INSTAGRAM = os.getenv("INSTAGRAM", "https://instagram.com/yaduwanshi_nand")
-YOUTUBE = os.getenv("YOUTUBE", "https://youtube.com/@NandEditz")
-GITHUB = os.getenv("GITHUB", "https://github.com/NoxxOP")
-DONATE = os.getenv("DONATE", "https://t.me/ShrutiBots/91")
+SUPPORT_CHANNEL = os.getenv("SUPPORT_CHANNEL", "https://t.me/Preetibotupdates")
+SUPPORT_GROUP = os.getenv("SUPPORT_GROUP", "https://t.me/+m63eJ-Mc_jpjMzll")
 PRIVACY_LINK = os.getenv("PRIVACY_LINK", "https://graph.org/Privacy-Policy-05-01-30")
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
