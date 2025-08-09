@@ -3,8 +3,7 @@ import time
 import psutil
 
 from ShrutiMusic.misc import _boot_
-from ShrutiMusic.utils.formatters import get_readable_time
-
+from ShrutiMusic.utils.sys import bot_sys_stats
 
 async def bot_sys_stats():
     bot_uptime = int(time.time() - _boot_)
