@@ -1,33 +1,53 @@
-from pyrogram.types import InlineKeyboardButton
-import config
-from ShrutiMusic import app
+from pyrogram.types import InlineQueryResultArticle, InputTextMessageContent
 
-def start_panel(_):
-    buttons = [
-        [
-            InlineKeyboardButton(
-                text=_["S_B_1"], url=f"https://t.me/{app.username}?startgroup=true"
-            ),
-            InlineKeyboardButton(text=_["S_B_2"], url=config.SUPPORT_GROUP),
-        ],             
-    ]
-    return buttons
+answer = []
 
-def private_panel(_):
-    buttons = [
-        [
-            InlineKeyboardButton(
-                text=_["S_B_3"],
-                url=f"https://t.me/{app.username}?startgroup=true",
-            )
-        ],
-        [
-                       InlineKeyboardButton(text=_["S_B_6"], url=config.SUPPORT_CHANNEL),
-            InlineKeyboardButton(text=_["S_B_5"], user_id=config.OWNER_ID),
-            InlineKeyboardButton(text=_["S_B_2"], url=config.SUPPORT_GROUP),
-        ],
-        [
-            InlineKeyboardButton(text=_["S_B_4"], callback_data="settings_back_helper")
-        ],
+answer.extend(
+    [
+        InlineQueryResultArticle(
+            title="Pᴀᴜsᴇ",
+            description=f"ᴩᴀᴜsᴇ ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ ᴩʟᴀʏɪɴɢ sᴛʀᴇᴀᴍ ᴏɴ ᴠɪᴅᴇᴏᴄʜᴀᴛ.",
+            thumb_url="https://telegra.ph/file/c5952790fa8235f499749.jpg",
+            input_message_content=InputTextMessageContent("/pause"),
+        ),
+        InlineQueryResultArticle(
+            title="Rᴇsᴜᴍᴇ",
+            description=f"ʀᴇsᴜᴍᴇ ᴛʜᴇ ᴩᴀᴜsᴇᴅ sᴛʀᴇᴀᴍ ᴏɴ ᴠɪᴅᴇᴏᴄʜᴀᴛ.",
+            thumb_url="https://telegra.ph/file/c5952790fa8235f499749.jpg",
+            input_message_content=InputTextMessageContent("/resume"),
+        ),
+        InlineQueryResultArticle(
+            title="Sᴋɪᴩ",
+            description=f"sᴋɪᴩ ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ ᴩʟᴀʏɪɴɢ sᴛʀᴇᴀᴍ ᴏɴ ᴠɪᴅᴇᴏᴄʜᴀᴛ ᴀɴᴅ ᴍᴏᴠᴇs ᴛᴏ ᴛʜᴇ ɴᴇxᴛ sᴛʀᴇᴀᴍ.",
+            thumb_url="https://telegra.ph/file/c5952790fa8235f499749.jpg",
+            input_message_content=InputTextMessageContent("/skip"),
+        ),
+        InlineQueryResultArticle(
+            title="Eɴᴅ",
+            description="ᴇɴᴅ ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ ᴩʟᴀʏɪɴɢ sᴛʀᴇᴀᴍ ᴏɴ ᴠɪᴅᴇᴏᴄʜᴀᴛ.",
+            thumb_url="https://telegra.ph/file/c5952790fa8235f499749.jpg",
+            input_message_content=InputTextMessageContent("/end"),
+        ),
+        InlineQueryResultArticle(
+            title="Sʜᴜғғʟᴇ",
+            description="sʜᴜғғʟᴇ ᴛʜᴇ ǫᴜᴇᴜᴇᴅ sᴏɴɢs ɪɴ ᴩʟᴀʏʟɪsᴛ.",
+            thumb_url="https://telegra.ph/file/c5952790fa8235f499749.jpg",
+            input_message_content=InputTextMessageContent("/shuffle"),
+        ),
+        InlineQueryResultArticle(
+            title="Lᴏᴏᴩ",
+            description="ʟᴏᴏᴩ ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ ᴩʟᴀʏɪɴɢ ᴛʀᴀᴄᴋ ᴏɴ ᴠɪᴅᴇᴏᴄʜᴀᴛ.",
+            thumb_url="https://telegra.ph/file/c5952790fa8235f499749.jpg",
+            input_message_content=InputTextMessageContent("/loop 3"),
+        ),
     ]
-    return buttons
+)
+
+
+# ©️ Copyright Reserved - @NoxxOP  Nand Yaduwanshi
+
+# ===========================================
+# ©️ 2025 Nand Yaduwanshi (aka @NoxxOP)
+# 🔗 GitHub : https://github.com/NoxxOP/ShrutiMusic
+# 📢 Telegram Channel : https://t.me/ShrutiBots
+# ===========================================
